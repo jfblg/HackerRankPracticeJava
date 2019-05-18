@@ -20,7 +20,8 @@ public class JavaCurrencyFormatter {
 
         NumberFormat inFormat = NumberFormat.getCurrencyInstance(inLocale);
         inFormat.setCurrency(inCurrency);
-        String india = inFormat.format(payment);
+        String india = inFormat.format(payment).replace("INR", "Rs.");
+
 
         NumberFormat frFormat = NumberFormat.getCurrencyInstance(Locale.FRANCE);
         String france = frFormat.format(payment);
