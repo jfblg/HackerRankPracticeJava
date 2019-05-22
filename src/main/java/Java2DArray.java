@@ -34,8 +34,9 @@ public class Java2DArray {
         int[][] sub2DArray = new int[3][3];
 
         for (int i = 0; i < 3; i++) {
-            sub2DArray[i]= Arrays.copyOfRange(arr[i + y] ,x, x+3);
+            sub2DArray[i]= Arrays.copyOfRange(arr[y + i] , x, x+3);
         }
+        print2DArray(sub2DArray);
         return sub2DArray;
     }
 
@@ -43,10 +44,10 @@ public class Java2DArray {
         int y = arr.length;
         int x = arr[0].length;
 
-        int highestSum = 0;
+        int highestSum = -10000; // for the case that sumOfHourglass < 0
 
-        for (int i = 0; i < y; i++) {
-            for (int j = 0; j < x; j++) {
+        for (int i = 0; i < y-2; i++) {
+            for (int j = 0; j < x-2; j++) {
                 int[][] subArray = getSubArray(arr, j, i);
                 int sum = getSumtOfHourglass(subArray);
                 if(sum > highestSum)
