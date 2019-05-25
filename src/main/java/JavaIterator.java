@@ -18,7 +18,7 @@ public class JavaIterator {
         return it;
     }
 
-    @SuppressWarnings({ "unchecked" }) 
+    @SuppressWarnings({ "unchecked" })
     public static void main(String[] args) {
         ArrayList myList = new ArrayList();
         Scanner sc = new Scanner(System.in);
