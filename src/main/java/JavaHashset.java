@@ -17,10 +17,11 @@ public class JavaHashset {
         // my code
         Set<String> wordsLeft = new HashSet<>();
         Set<String> wordsRight = new HashSet<>();
+        Set<String> pairs = new HashSet<>();
         for(int i=0; i<t ;i ++) {
-            wordsLeft.add(pair_left[i]);
-            wordsRight.add(pair_right[i]);
-            System.out.println((Math.max(wordsLeft.size(), wordsRight.size())));
+            String pair = pair_left[i] + " " + pair_right[i];
+            pairs.add(pair);
+            System.out.println(pairs.size());
         }
 
 //        Iterator it = words.iterator();
