@@ -15,8 +15,6 @@ public class JavaHashset {
             pair_right[i] = sc.next();
         }
         // my code
-        Set<String> wordsLeft = new HashSet<>();
-        Set<String> wordsRight = new HashSet<>();
         Set<String> pairs = new HashSet<>();
         for(int i=0; i<t ;i ++) {
             String pair = pair_left[i] + " " + pair_right[i];
