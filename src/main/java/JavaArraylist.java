@@ -3,8 +3,6 @@ import java.util.*;
 
 public class JavaArraylist {
 
-    // TODO implement iterator
-    // TODO implement static function which prints the requests
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
