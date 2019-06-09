@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.runtime.ECMAException;
-
 import java.util.Scanner;
 
 class MyCalculator2 {

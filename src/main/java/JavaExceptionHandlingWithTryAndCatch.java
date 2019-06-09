@@ -12,7 +12,13 @@ public class JavaExceptionHandlingWithTryAndCatch {
             y = sc.nextInt();
             System.out.println(x / y);
         } catch (InputMismatchException | ArithmeticException e) {
-            System.out.println(e);
+            if(e.toString().contains("InputMismatchException")){
+                String[] excptName = e.toString().split(":");
+                System.out.println(excptName[0]);
+            }
+            else {
+                System.out.println(e);
+            }
 
         } finally {
             sc.close();
