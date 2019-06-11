@@ -22,17 +22,17 @@ class Cake implements Food {
 
 class FoodFactory {
     public Food getFood(String order) {
-        if(order == null) {
-            return null;
-        }
+
+        Food food = null;
+
         if(order.equalsIgnoreCase("PIZZA")) {
-            return new Pizza();
+            food = new Pizza();
         }
         if(order.equalsIgnoreCase("CAKE")) {
-            return new Cake();
+            food = new Cake();
         }
 
-        return null;
+        return food;
     }
 }
 
