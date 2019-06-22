@@ -32,11 +32,11 @@ class MyMath {
         return p.check(num);
     }
 
-    public PerformOperation isOdd() {
+    public static PerformOperation isOdd() {
         return n -> (n & 1) == 1 ? true : false;
     }
 
-    public PerformOperation isPrime() {
+    public static PerformOperation isPrime() {
         return n -> {
             for(int i = n-1; i > 1; i--) {
                 if(n % i == 0) {
@@ -47,7 +47,7 @@ class MyMath {
         };
     }
 
-    public PerformOperation isPalindrome() {
+    public static PerformOperation isPalindrome() {
         return n -> {
             String nAsString = String.valueOf(n);
             String reverse = "";
